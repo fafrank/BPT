@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DBBB53498E3CF9B76F022FE91FB5D9E /* Pods-BasketballBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 195117B73ED958E971C10644C79A710A /* Pods-BasketballBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DCCDFC95CADA95972E335145FD5FFBE /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 37967B51980EC6713E3C92AF53F3EB58 /* NSArray+PureLayout.m */; };
+		2FD2DCE2199C34034312F42F0CA985CF /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E57DEF57456CA59E20A441CEF62B5 /* PureLayout-dummy.m */; };
+		32F6AAB480EBFCC2E6F80EA8A08D7788 /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BCA5BB6834DAC07ADDBAF904E7BD94 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335537AF8D29B009AAB85C52AC7B401A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		358B74B1A7BC53A4113E92577FEE4AFC /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A12D4B8AF15A590BC9B4D1427C0CB7BF /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C5C6BBD4B06F43F89083E2423E293A8 /* Pods-BasketballBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F75A97C9E112714D592C30E3E569F06A /* Pods-BasketballBook-dummy.m */; };
+		49A573BD033079CA1E30FF49F6EBDE37 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5676B0C02047CD971A3A18904D1E210E /* Utils.swift */; };
+		52E1406E72D48AAE01C98A1AC2A55046 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D61767B6D5753B18E7E447524A77D9 /* ALView+PureLayout.m */; };
+		5AC610C0CDD0846DD81A7C92C728DB06 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C966D21A22C865BFFE9BA8F753523 /* SwiftyButton-dummy.m */; };
+		5D985AC88DF19C1100CB90935FC2214B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		66DE7F1A1DBCE2BA1A32B2E41F074F49 /* CustomPressableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA850B27CA9121A01D473003A48C9CC8 /* CustomPressableButton.swift */; };
+		6A25289E053DEFD56D371DF796388315 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B06B9E129052EDCA63B69773161599B /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7101D779D76DF5609C68DBE98CDF1051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		7D28CE48BF2934B242EC5496076A763B /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8715259B0A67D3332A112DF4992EC0 /* FlatButton.swift */; };
+		8F5FA32AFD8977525888A8B9F647B473 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3BAC141CEB0EC2A150C09120D93657 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90D83841B90B4FC8022B10343E7DEA95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		9D205F6E15EC1EE54DECFF854925E0DB /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FF836CE6D35543C1D095E4CA991605B8 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6768C4E962A4FC71A2527E149501AA6 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 40621E3B4B13788291428070C5A5AA8A /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1A7294A3BA0F733C1E9D559ADFD0840 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DD109C42623D03FB117796412B98CEDA /* NSLayoutConstraint+PureLayout.m */; };
+		C5978C951334240D735FF9CE35B437EB /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9FC031E5126A2F9E977EAEAE27CEC4 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D661B11AE9471BBF00AD21C9347BD4EB /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C796FF8B30A75B37D43558B08C6BD20 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F93D68651755E5F7B106B33EBD6EF3D4 /* PressableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99533FD98A62788607856EED6C594E5A /* PressableButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17ED4DB53874917774185DCC203BA73F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E08441EEDEBD6ADE9E92220495632D;
+			remoteInfo = PureLayout;
+		};
+		BD697253675109351E56FF6F67A68AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0DA406ED1837C678B9EFD07FE3C45E;
+			remoteInfo = SwiftyButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01973971589D63AEFA1AF5B3652D9CB2 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		087E8C8B4C8CFDC930AC325C52E7728B /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyButton.framework; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195117B73ED958E971C10644C79A710A /* Pods-BasketballBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BasketballBook-umbrella.h"; sourceTree = "<group>"; };
+		23B22AF960E4113420A3A99B49BCA3C6 /* Pods-BasketballBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasketballBook.debug.xcconfig"; sourceTree = "<group>"; };
+		2A985D9D6EBD6F8ACE0A1136E3C36843 /* Pods-BasketballBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BasketballBook.modulemap"; sourceTree = "<group>"; };
+		37967B51980EC6713E3C92AF53F3EB58 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		40621E3B4B13788291428070C5A5AA8A /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		41329EBD322D54B29A3ACD6BA41A1E74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414E57DEF57456CA59E20A441CEF62B5 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		47581B8050A80D6592BB63A5EB82455B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5676B0C02047CD971A3A18904D1E210E /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = SwiftyButton/Utils.swift; sourceTree = "<group>"; };
+		5DAC1625EF9F07AEF97E792845B53D79 /* Pods-BasketballBook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BasketballBook-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F9FC031E5126A2F9E977EAEAE27CEC4 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		661C966D21A22C865BFFE9BA8F753523 /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		69D61767B6D5753B18E7E447524A77D9 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		6B06B9E129052EDCA63B69773161599B /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		6C796FF8B30A75B37D43558B08C6BD20 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		6E3BAC141CEB0EC2A150C09120D93657 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		6F4B0B7703DF8132406F89E9605191EE /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		6F8715259B0A67D3332A112DF4992EC0 /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = SwiftyButton/FlatButton.swift; sourceTree = "<group>"; };
+		6FE30EC6F78C8DC3F4105EA58E0D47D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8C4BC9902136D5E4F2FEB63C20849CB3 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		9046248936AC7243E11DD8B2E989AF1F /* Pods_BasketballBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BasketballBook.framework; path = "Pods-BasketballBook.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91350633BE045B4DF628BF7D15D7794F /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99533FD98A62788607856EED6C594E5A /* PressableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PressableButton.swift; path = SwiftyButton/PressableButton.swift; sourceTree = "<group>"; };
+		A12D4B8AF15A590BC9B4D1427C0CB7BF /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		ADDCE8C4CAE4E2C403FA7C4CDDFCBA76 /* Pods-BasketballBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BasketballBook.release.xcconfig"; sourceTree = "<group>"; };
+		B065B8234553D2C2D45F11B3FC4DF2C0 /* Pods-BasketballBook-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasketballBook-frameworks.sh"; sourceTree = "<group>"; };
+		B10988DBC5F9D27CBDA0B03D90DCB6A9 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7D14CA1C17DB75CC7F024071ACA6A6 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		C05FD0259523BD663FBC109138608F25 /* Pods-BasketballBook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BasketballBook-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA850B27CA9121A01D473003A48C9CC8 /* CustomPressableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomPressableButton.swift; path = SwiftyButton/CustomPressableButton.swift; sourceTree = "<group>"; };
+		CBD1E9AD6F24B89C87B790639DDB5AB8 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		D1646DE9AE149009DE6920DBE29A9E06 /* Pods-BasketballBook-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BasketballBook-resources.sh"; sourceTree = "<group>"; };
+		DD109C42623D03FB117796412B98CEDA /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		F4BCA5BB6834DAC07ADDBAF904E7BD94 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		F75A97C9E112714D592C30E3E569F06A /* Pods-BasketballBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BasketballBook-dummy.m"; sourceTree = "<group>"; };
+		FF836CE6D35543C1D095E4CA991605B8 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0576DD7AE84429AAB1FDD8A1A74C7465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D83841B90B4FC8022B10343E7DEA95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF23D88B8267DBDA8CEB67DAEB0FC408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335537AF8D29B009AAB85C52AC7B401A /* Foundation.framework in Frameworks */,
+				7101D779D76DF5609C68DBE98CDF1051 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED501DFDD77EC56996A7201F79E274E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D985AC88DF19C1100CB90935FC2214B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07951EEB826A38728470E3A3642706F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38C747585694552AD9DCD216A59885B7 /* PureLayout */,
+				F05C79404F31ECB1D5AD252BA69560AF /* SwiftyButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		38C747585694552AD9DCD216A59885B7 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A12D4B8AF15A590BC9B4D1427C0CB7BF /* ALView+PureLayout.h */,
+				69D61767B6D5753B18E7E447524A77D9 /* ALView+PureLayout.m */,
+				6C796FF8B30A75B37D43558B08C6BD20 /* NSArray+PureLayout.h */,
+				37967B51980EC6713E3C92AF53F3EB58 /* NSArray+PureLayout.m */,
+				40621E3B4B13788291428070C5A5AA8A /* NSLayoutConstraint+PureLayout.h */,
+				DD109C42623D03FB117796412B98CEDA /* NSLayoutConstraint+PureLayout.m */,
+				FF836CE6D35543C1D095E4CA991605B8 /* PureLayout.h */,
+				6B06B9E129052EDCA63B69773161599B /* PureLayout+Internal.h */,
+				6E3BAC141CEB0EC2A150C09120D93657 /* PureLayoutDefines.h */,
+				BC4247BD6F6AC432E96B95576100F5BC /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				07951EEB826A38728470E3A3642706F2 /* Pods */,
+				86CFAEC173574049D2FE088AAA0170D2 /* Products */,
+				E57B4A202A38916BFE540F3356441004 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86CFAEC173574049D2FE088AAA0170D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9046248936AC7243E11DD8B2E989AF1F /* Pods_BasketballBook.framework */,
+				B10988DBC5F9D27CBDA0B03D90DCB6A9 /* PureLayout.framework */,
+				087E8C8B4C8CFDC930AC325C52E7728B /* SwiftyButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF619D6CE2D11C1E486AEBEA7081332 /* Pods-BasketballBook */ = {
+			isa = PBXGroup;
+			children = (
+				47581B8050A80D6592BB63A5EB82455B /* Info.plist */,
+				2A985D9D6EBD6F8ACE0A1136E3C36843 /* Pods-BasketballBook.modulemap */,
+				5DAC1625EF9F07AEF97E792845B53D79 /* Pods-BasketballBook-acknowledgements.markdown */,
+				C05FD0259523BD663FBC109138608F25 /* Pods-BasketballBook-acknowledgements.plist */,
+				F75A97C9E112714D592C30E3E569F06A /* Pods-BasketballBook-dummy.m */,
+				B065B8234553D2C2D45F11B3FC4DF2C0 /* Pods-BasketballBook-frameworks.sh */,
+				D1646DE9AE149009DE6920DBE29A9E06 /* Pods-BasketballBook-resources.sh */,
+				195117B73ED958E971C10644C79A710A /* Pods-BasketballBook-umbrella.h */,
+				23B22AF960E4113420A3A99B49BCA3C6 /* Pods-BasketballBook.debug.xcconfig */,
+				ADDCE8C4CAE4E2C403FA7C4CDDFCBA76 /* Pods-BasketballBook.release.xcconfig */,
+			);
+			name = "Pods-BasketballBook";
+			path = "Target Support Files/Pods-BasketballBook";
+			sourceTree = "<group>";
+		};
+		BC4247BD6F6AC432E96B95576100F5BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41329EBD322D54B29A3ACD6BA41A1E74 /* Info.plist */,
+				01973971589D63AEFA1AF5B3652D9CB2 /* PureLayout.modulemap */,
+				8C4BC9902136D5E4F2FEB63C20849CB3 /* PureLayout.xcconfig */,
+				414E57DEF57456CA59E20A441CEF62B5 /* PureLayout-dummy.m */,
+				91350633BE045B4DF628BF7D15D7794F /* PureLayout-prefix.pch */,
+				5F9FC031E5126A2F9E977EAEAE27CEC4 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		CF27C5E1DC7F0C36E273D68FCB86F126 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FE30EC6F78C8DC3F4105EA58E0D47D2 /* Info.plist */,
+				BF7D14CA1C17DB75CC7F024071ACA6A6 /* SwiftyButton.modulemap */,
+				6F4B0B7703DF8132406F89E9605191EE /* SwiftyButton.xcconfig */,
+				661C966D21A22C865BFFE9BA8F753523 /* SwiftyButton-dummy.m */,
+				CBD1E9AD6F24B89C87B790639DDB5AB8 /* SwiftyButton-prefix.pch */,
+				F4BCA5BB6834DAC07ADDBAF904E7BD94 /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		E57B4A202A38916BFE540F3356441004 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CF619D6CE2D11C1E486AEBEA7081332 /* Pods-BasketballBook */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F05C79404F31ECB1D5AD252BA69560AF /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				CA850B27CA9121A01D473003A48C9CC8 /* CustomPressableButton.swift */,
+				6F8715259B0A67D3332A112DF4992EC0 /* FlatButton.swift */,
+				99533FD98A62788607856EED6C594E5A /* PressableButton.swift */,
+				5676B0C02047CD971A3A18904D1E210E /* Utils.swift */,
+				CF27C5E1DC7F0C36E273D68FCB86F126 /* Support Files */,
+			);
+			name = SwiftyButton;
+			path = SwiftyButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D652AECEB2873F93AF225772507BA13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358B74B1A7BC53A4113E92577FEE4AFC /* ALView+PureLayout.h in Headers */,
+				D661B11AE9471BBF00AD21C9347BD4EB /* NSArray+PureLayout.h in Headers */,
+				B6768C4E962A4FC71A2527E149501AA6 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				6A25289E053DEFD56D371DF796388315 /* PureLayout+Internal.h in Headers */,
+				C5978C951334240D735FF9CE35B437EB /* PureLayout-umbrella.h in Headers */,
+				9D205F6E15EC1EE54DECFF854925E0DB /* PureLayout.h in Headers */,
+				8F5FA32AFD8977525888A8B9F647B473 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EA2ECA0AF0DE9643662E09622974951 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DBBB53498E3CF9B76F022FE91FB5D9E /* Pods-BasketballBook-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81B906E5E4C5C049C60074F4E5838D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F6AAB480EBFCC2E6F80EA8A08D7788 /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00E08441EEDEBD6ADE9E92220495632D /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB94FBD968DE28539CCC04F0EF3893FD /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				8163762B58C82E8B15F4875DA04EED06 /* Sources */,
+				ED501DFDD77EC56996A7201F79E274E6 /* Frameworks */,
+				4D652AECEB2873F93AF225772507BA13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = B10988DBC5F9D27CBDA0B03D90DCB6A9 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1E5A00BF898F99ACCC123CFEE6BD4FC /* Pods-BasketballBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA393A3EC85AA067F381818FCDB50BC0 /* Build configuration list for PBXNativeTarget "Pods-BasketballBook" */;
+			buildPhases = (
+				5837592D34E8CB36E821F35D54D91347 /* Sources */,
+				0576DD7AE84429AAB1FDD8A1A74C7465 /* Frameworks */,
+				5EA2ECA0AF0DE9643662E09622974951 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56D1AA03ECA30A7BA162BF0B8BD874B5 /* PBXTargetDependency */,
+				D6D8410B9C21A99195680618B9589163 /* PBXTargetDependency */,
+			);
+			name = "Pods-BasketballBook";
+			productName = "Pods-BasketballBook";
+			productReference = 9046248936AC7243E11DD8B2E989AF1F /* Pods_BasketballBook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE0DA406ED1837C678B9EFD07FE3C45E /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43BDFCAAE0BDA56CB1DC9E1A04EDB21 /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				4E5BB54571467593B86B801FBC76C2F0 /* Sources */,
+				DF23D88B8267DBDA8CEB67DAEB0FC408 /* Frameworks */,
+				A81B906E5E4C5C049C60074F4E5838D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = 087E8C8B4C8CFDC930AC325C52E7728B /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 86CFAEC173574049D2FE088AAA0170D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1E5A00BF898F99ACCC123CFEE6BD4FC /* Pods-BasketballBook */,
+				00E08441EEDEBD6ADE9E92220495632D /* PureLayout */,
+				FE0DA406ED1837C678B9EFD07FE3C45E /* SwiftyButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E5BB54571467593B86B801FBC76C2F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DE7F1A1DBCE2BA1A32B2E41F074F49 /* CustomPressableButton.swift in Sources */,
+				7D28CE48BF2934B242EC5496076A763B /* FlatButton.swift in Sources */,
+				F93D68651755E5F7B106B33EBD6EF3D4 /* PressableButton.swift in Sources */,
+				5AC610C0CDD0846DD81A7C92C728DB06 /* SwiftyButton-dummy.m in Sources */,
+				49A573BD033079CA1E30FF49F6EBDE37 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5837592D34E8CB36E821F35D54D91347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5C6BBD4B06F43F89083E2423E293A8 /* Pods-BasketballBook-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8163762B58C82E8B15F4875DA04EED06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E1406E72D48AAE01C98A1AC2A55046 /* ALView+PureLayout.m in Sources */,
+				2DCCDFC95CADA95972E335145FD5FFBE /* NSArray+PureLayout.m in Sources */,
+				C1A7294A3BA0F733C1E9D559ADFD0840 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				2FD2DCE2199C34034312F42F0CA985CF /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56D1AA03ECA30A7BA162BF0B8BD874B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 00E08441EEDEBD6ADE9E92220495632D /* PureLayout */;
+			targetProxy = 17ED4DB53874917774185DCC203BA73F /* PBXContainerItemProxy */;
+		};
+		D6D8410B9C21A99195680618B9589163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = FE0DA406ED1837C678B9EFD07FE3C45E /* SwiftyButton */;
+			targetProxy = BD697253675109351E56FF6F67A68AB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		613CA96D1CFE91730175A7EEF999481D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B22AF960E4113420A3A99B49BCA3C6 /* Pods-BasketballBook.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BasketballBook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasketballBook/Pods-BasketballBook.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BasketballBook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6AAB17428E20F18482D08EFC3A253C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDCE8C4CAE4E2C403FA7C4CDDFCBA76 /* Pods-BasketballBook.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BasketballBook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BasketballBook/Pods-BasketballBook.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BasketballBook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87A3BC52DF66339F13356698B834E8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4B0B7703DF8132406F89E9605191EE /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2FCD7DC991F7E038A871F20E3190C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4BC9902136D5E4F2FEB63C20849CB3 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC63B2457725CE7AEFBE5402A31BDF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4BC9902136D5E4F2FEB63C20849CB3 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EF552F1841BD29558AD3240698AA5F19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4B0B7703DF8132406F89E9605191EE /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB94FBD968DE28539CCC04F0EF3893FD /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC63B2457725CE7AEFBE5402A31BDF0D /* Debug */,
+				A2FCD7DC991F7E038A871F20E3190C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA393A3EC85AA067F381818FCDB50BC0 /* Build configuration list for PBXNativeTarget "Pods-BasketballBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613CA96D1CFE91730175A7EEF999481D /* Debug */,
+				6AAB17428E20F18482D08EFC3A253C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43BDFCAAE0BDA56CB1DC9E1A04EDB21 /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF552F1841BD29558AD3240698AA5F19 /* Debug */,
+				87A3BC52DF66339F13356698B834E8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

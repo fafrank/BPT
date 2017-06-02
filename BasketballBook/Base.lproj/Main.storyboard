@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mkq-Et-6lf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scoring Table View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ScoringTableViewController" customModule="BasketballBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAA-V7-bh0">
+                                <rect key="frame" x="289" y="594" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戰術板"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="tacticalBoard" destination="DAA-V7-bh0" id="rJb-fd-udr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="272"/>
+        </scene>
+        <!--Rules View Controller-->
+        <scene sceneID="LDi-fM-NZU">
+            <objects>
+                <viewController id="mkq-Et-6lf" customClass="RulesViewController" customModule="BasketballBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHW-1Z-vbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZN3-VK-sQY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nG5-Pv-Obf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHI-dv-mcB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkv-qo-QkY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPM-aO-slR" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="382" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="lrg-x6-hZe"/>
+                                                    <constraint firstAttribute="width" constant="95" id="u9b-PG-eFA"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="Mgd-Tq-tLJ"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次暫停" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oli-eh-6c3">
+                                                <rect key="frame" x="267" y="387" width="52" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下半場共可使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmD-VM-SOQ">
+                                                <rect key="frame" x="16" y="387" width="122" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="rZ3-pK-8Nn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-Fu-vn8" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="420" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="H7G-uH-u7n"/>
+                                                    <constraint firstAttribute="width" constant="95" id="VPf-cG-hao"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="rel-gL-xHK"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次暫停" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7J-gZ-xDT">
+                                                <rect key="frame" x="267" y="425" width="52" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="延長賽每節可使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpo-Fd-bqR">
+                                                <rect key="frame" x="16" y="425" width="139" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="139" id="0wS-8y-ygT"/>
+                                                    <constraint firstAttribute="height" constant="20" id="d5G-RY-AQA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RgQ-ir-z2b" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="344" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="AHV-Xy-3Lb"/>
+                                                    <constraint firstAttribute="width" constant="95" id="vlX-zL-72Y"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="3Zi-xc-DEU"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上半場共可使用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSa-zj-9gL">
+                                                <rect key="frame" x="16" y="349" width="122" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="wd0-1b-Y9Z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次暫停" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niU-9W-880">
+                                                <rect key="frame" x="267" y="349" width="52" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuC-mD-j4r" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="306" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="7gr-qW-L6g"/>
+                                                    <constraint firstAttribute="width" constant="95" id="FgX-fH-BfD"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="XHY-pR-zdo"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次將進行加罰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjR-OH-9DM">
+                                                <rect key="frame" x="267" y="311" width="104" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="若單節團隊犯規滿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65T-bN-Rq4">
+                                                <rect key="frame" x="16" y="311" width="139" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Rbf-Sg-Gyy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBJ-ci-9Ba" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="268" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="kvd-vm-jXp"/>
+                                                    <constraint firstAttribute="height" constant="30" id="xh8-Oc-yzr"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="PXE-1U-hnY"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="若個人犯規滿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtV-Ld-AnY">
+                                                <rect key="frame" x="16" y="273" width="104" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="c7R-jm-UJU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次將離場" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn1-Xm-bcd">
+                                                <rect key="frame" x="267" y="273" width="70" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBy-te-C28" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="230" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="1l8-2S-Dbg"/>
+                                                    <constraint firstAttribute="height" constant="30" id="idV-z1-n4R"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="TBa-sw-v3t"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分鐘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hi-IC-kEG">
+                                                <rect key="frame" x="267" y="235" width="35" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中場休息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oD-wk-epK">
+                                                <rect key="frame" x="16" y="235" width="70" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="kUX-gy-hVa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="os6-ya-72Z" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="165" y="192" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="1dM-94-UTu"/>
+                                                    <constraint firstAttribute="height" constant="30" id="d9Q-UB-g1B"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="Ha8-T9-Jsc"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分鐘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87A-DI-smN">
+                                                <rect key="frame" x="267" y="197" width="35" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="節與節之間休息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWk-Eb-TlX">
+                                                <rect key="frame" x="16" y="197" width="122" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="LdH-4o-jqe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-jj-Hnk" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="163.5" y="154" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="mjY-xe-1Wx"/>
+                                                    <constraint firstAttribute="width" constant="95" id="zrG-OW-Rcu"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="0Ja-41-X0j"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="若有延長賽, 每節" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-JR-90u">
+                                                <rect key="frame" x="16" y="159" width="130.5" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="sE0-9a-fBe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分鐘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmq-uG-SGR">
+                                                <rect key="frame" x="265.5" y="159" width="35" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17F-dF-RGJ" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="164" y="116" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="ZQ0-Fa-Mop"/>
+                                                    <constraint firstAttribute="height" constant="30" id="a4o-WD-6xF"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="aA7-7Y-V5e"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每節" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaR-yf-OWI">
+                                                <rect key="frame" x="16" y="121" width="35" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分鐘" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDY-cE-DIc">
+                                                <rect key="frame" x="266" y="121" width="35" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDo-bp-Qjh" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="164" y="78" width="95" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="lkd-Jd-Clk"/>
+                                                    <constraint firstAttribute="width" constant="95" id="wIB-Tr-MwP"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="qVH-vS-ydY"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="節" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvI-gB-KmE">
+                                                <rect key="frame" x="266" y="83" width="17.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="17.5" id="LAn-sh-zUS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定規則" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUn-gf-PmT">
+                                                <rect key="frame" x="134" y="18" width="106" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="AuI-fc-VVI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="進攻時間的限制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irw-hp-kZj">
+                                                <rect key="frame" x="16" y="468" width="122" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="twh-nb-IWs"/>
+                                                    <constraint firstAttribute="width" constant="122" id="vm9-nB-wbt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="停錶時機" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUZ-05-lAA">
+                                                <rect key="frame" x="16" y="513" width="70" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="ENM-F6-oDz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26V-So-dgC" customClass="RAMPaperSwitch" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="153" y="462" width="51" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="49" id="Lpm-R3-puD"/>
+                                                    <constraint firstAttribute="height" constant="31" id="uAC-0F-i88"/>
+                                                </constraints>
+                                                <color key="onTintColor" red="0.0" green="0.66274509803921566" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </switch>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="決勝節最後兩分鐘停錶" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YkO-dm-Neh" customClass="UITextFieldExtendedView" customModule="BasketballBook" customModuleProvider="target">
+                                                <rect key="frame" x="117" y="508" width="164" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="164" id="2l5-uz-GV3"/>
+                                                    <constraint firstAttribute="height" constant="30" id="7Wn-bQ-xBK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mkq-Et-6lf" id="goP-d5-abl"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ov8-VV-Z5y" customClass="FlatButton" customModule="SwiftyButton">
+                                                <rect key="frame" x="16" y="583" width="100" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.14566128249999999" blue="0.77265383870000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QOz-QM-Rct"/>
+                                                    <constraint firstAttribute="width" constant="100" id="iRG-dY-Sk3"/>
+                                                </constraints>
+                                                <state key="normal" title="快速開始"/>
+                                                <connections>
+                                                    <action selector="confirmWithFIBARules:" destination="mkq-Et-6lf" eventType="touchUpInside" id="js9-PB-opW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irQ-4b-gTR" customClass="FlatButton" customModule="SwiftyButton">
+                                                <rect key="frame" x="259" y="583" width="100" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.14566128249999999" blue="0.77265383870000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="vhV-jK-8hq"/>
+                                                    <constraint firstAttribute="height" constant="40" id="woV-JM-n97"/>
+                                                </constraints>
+                                                <state key="normal" title="確認規則"/>
+                                                <connections>
+                                                    <action selector="confirmRules:" destination="mkq-Et-6lf" eventType="touchUpInside" id="zrA-wl-Qbx"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToScoringTable" id="uMs-qs-5UH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="YkO-dm-Neh" firstAttribute="top" secondItem="26V-So-dgC" secondAttribute="bottom" constant="15" id="0Xh-nD-MHD"/>
+                                            <constraint firstItem="bpo-Fd-bqR" firstAttribute="centerY" secondItem="Ig5-Fu-vn8" secondAttribute="centerY" id="22Z-MP-ldR"/>
+                                            <constraint firstItem="PSa-zj-9gL" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="23q-AE-DVB"/>
+                                            <constraint firstItem="gRD-JR-90u" firstAttribute="centerY" secondItem="XhQ-jj-Hnk" secondAttribute="centerY" id="2ua-HR-qyK"/>
+                                            <constraint firstItem="ov8-VV-Z5y" firstAttribute="centerY" secondItem="irQ-4b-gTR" secondAttribute="centerY" id="3fP-kp-Lh9"/>
+                                            <constraint firstItem="SaR-yf-OWI" firstAttribute="top" secondItem="xkv-qo-QkY" secondAttribute="top" constant="121" id="5iB-FF-BFb"/>
+                                            <constraint firstItem="irw-hp-kZj" firstAttribute="centerY" secondItem="26V-So-dgC" secondAttribute="centerY" id="7Ms-uI-Bj5"/>
+                                            <constraint firstItem="yuC-mD-j4r" firstAttribute="top" secondItem="nBJ-ci-9Ba" secondAttribute="bottom" constant="8" id="84m-yb-e3A"/>
+                                            <constraint firstItem="6hi-IC-kEG" firstAttribute="centerY" secondItem="hBy-te-C28" secondAttribute="centerY" id="8r4-IK-Hz6"/>
+                                            <constraint firstItem="17F-dF-RGJ" firstAttribute="top" secondItem="PDo-bp-Qjh" secondAttribute="bottom" constant="8" id="96F-Fk-b2u"/>
+                                            <constraint firstItem="pmq-uG-SGR" firstAttribute="leading" secondItem="XhQ-jj-Hnk" secondAttribute="trailing" constant="7" id="Aqo-Ma-xUP"/>
+                                            <constraint firstAttribute="trailing" secondItem="irQ-4b-gTR" secondAttribute="trailing" constant="16" id="Bbh-Bw-Znl"/>
+                                            <constraint firstItem="qtV-Ld-AnY" firstAttribute="centerY" secondItem="nBJ-ci-9Ba" secondAttribute="centerY" id="BkI-yC-ziA"/>
+                                            <constraint firstItem="PDo-bp-Qjh" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="164" id="CuG-Sa-hQN"/>
+                                            <constraint firstItem="87A-DI-smN" firstAttribute="centerY" secondItem="os6-ya-72Z" secondAttribute="centerY" id="CyQ-m6-Nw4"/>
+                                            <constraint firstItem="dDY-cE-DIc" firstAttribute="top" secondItem="WvI-gB-KmE" secondAttribute="bottom" constant="17" id="FMq-vB-rJz"/>
+                                            <constraint firstItem="d7J-gZ-xDT" firstAttribute="leading" secondItem="Ig5-Fu-vn8" secondAttribute="trailing" constant="7" id="HoF-l4-Hfq"/>
+                                            <constraint firstItem="6oD-wk-epK" firstAttribute="centerY" secondItem="hBy-te-C28" secondAttribute="centerY" id="J7u-w3-jEv"/>
+                                            <constraint firstItem="nBJ-ci-9Ba" firstAttribute="leading" secondItem="qtV-Ld-AnY" secondAttribute="trailing" constant="45" id="KjF-t2-Ibf"/>
+                                            <constraint firstItem="irw-hp-kZj" firstAttribute="top" secondItem="bpo-Fd-bqR" secondAttribute="bottom" constant="23" id="MQO-bN-4jy"/>
+                                            <constraint firstItem="gRD-JR-90u" firstAttribute="top" secondItem="SaR-yf-OWI" secondAttribute="bottom" constant="18" id="MdX-ny-g4v"/>
+                                            <constraint firstItem="LmD-VM-SOQ" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="N4i-1F-Q4D"/>
+                                            <constraint firstItem="aWk-Eb-TlX" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="NSi-0h-SG9"/>
+                                            <constraint firstItem="qtV-Ld-AnY" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="Oec-V4-JUj"/>
+                                            <constraint firstItem="Ig5-Fu-vn8" firstAttribute="top" secondItem="NPM-aO-slR" secondAttribute="bottom" constant="8" id="P56-DX-mnr"/>
+                                            <constraint firstAttribute="trailing" secondItem="kUn-gf-PmT" secondAttribute="trailing" constant="134.5" id="P71-Ya-aV9"/>
+                                            <constraint firstItem="yuC-mD-j4r" firstAttribute="leading" secondItem="65T-bN-Rq4" secondAttribute="trailing" constant="10" id="Qes-CZ-X5j"/>
+                                            <constraint firstItem="kUn-gf-PmT" firstAttribute="top" secondItem="xkv-qo-QkY" secondAttribute="top" constant="18" id="Rj1-I0-0DN"/>
+                                            <constraint firstItem="irQ-4b-gTR" firstAttribute="leading" secondItem="ov8-VV-Z5y" secondAttribute="trailing" constant="143" id="SFT-TW-Cxc"/>
+                                            <constraint firstItem="XhQ-jj-Hnk" firstAttribute="top" secondItem="17F-dF-RGJ" secondAttribute="bottom" constant="8" id="TJE-DT-d1G"/>
+                                            <constraint firstItem="WUZ-05-lAA" firstAttribute="centerY" secondItem="YkO-dm-Neh" secondAttribute="centerY" id="TeU-ip-rv5"/>
+                                            <constraint firstItem="nBJ-ci-9Ba" firstAttribute="top" secondItem="hBy-te-C28" secondAttribute="bottom" constant="8" id="UHS-GE-xmT"/>
+                                            <constraint firstItem="Yn1-Xm-bcd" firstAttribute="leading" secondItem="nBJ-ci-9Ba" secondAttribute="trailing" constant="7" id="VQT-Pm-7fI"/>
+                                            <constraint firstItem="NPM-aO-slR" firstAttribute="leading" secondItem="LmD-VM-SOQ" secondAttribute="trailing" constant="27" id="Wqd-wY-UNp"/>
+                                            <constraint firstItem="17F-dF-RGJ" firstAttribute="leading" secondItem="SaR-yf-OWI" secondAttribute="trailing" constant="113" id="X4J-d2-M2E"/>
+                                            <constraint firstItem="d7J-gZ-xDT" firstAttribute="centerY" secondItem="Ig5-Fu-vn8" secondAttribute="centerY" id="XG1-9H-cNo"/>
+                                            <constraint firstItem="os6-ya-72Z" firstAttribute="top" secondItem="XhQ-jj-Hnk" secondAttribute="bottom" constant="8" id="XXR-kG-OmW"/>
+                                            <constraint firstItem="26V-So-dgC" firstAttribute="leading" secondItem="irw-hp-kZj" secondAttribute="trailing" constant="15" id="XmJ-Oq-cjL"/>
+                                            <constraint firstItem="irw-hp-kZj" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="ZO7-Zx-fXW"/>
+                                            <constraint firstAttribute="bottom" secondItem="irQ-4b-gTR" secondAttribute="bottom" constant="24" id="Zdg-mi-6E7"/>
+                                            <constraint firstItem="WvI-gB-KmE" firstAttribute="centerY" secondItem="PDo-bp-Qjh" secondAttribute="centerY" id="ahn-ID-gcm"/>
+                                            <constraint firstItem="6oD-wk-epK" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="baP-be-ydO"/>
+                                            <constraint firstItem="XhQ-jj-Hnk" firstAttribute="leading" secondItem="gRD-JR-90u" secondAttribute="trailing" constant="17" id="cMh-fH-ogY"/>
+                                            <constraint firstItem="Ig5-Fu-vn8" firstAttribute="leading" secondItem="bpo-Fd-bqR" secondAttribute="trailing" constant="10" id="cd9-i3-EW6"/>
+                                            <constraint firstItem="LmD-VM-SOQ" firstAttribute="centerY" secondItem="NPM-aO-slR" secondAttribute="centerY" id="csS-Cj-Pr5"/>
+                                            <constraint firstItem="SaR-yf-OWI" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="dzg-gb-4wt"/>
+                                            <constraint firstItem="87A-DI-smN" firstAttribute="leading" secondItem="os6-ya-72Z" secondAttribute="trailing" constant="7" id="eDK-Po-YRk"/>
+                                            <constraint firstItem="WUZ-05-lAA" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="eTG-He-3z3"/>
+                                            <constraint firstItem="bpo-Fd-bqR" firstAttribute="top" secondItem="LmD-VM-SOQ" secondAttribute="bottom" constant="18" id="ej0-Qi-ic3"/>
+                                            <constraint firstItem="os6-ya-72Z" firstAttribute="leading" secondItem="aWk-Eb-TlX" secondAttribute="trailing" constant="27" id="f53-5v-wzs"/>
+                                            <constraint firstItem="PSa-zj-9gL" firstAttribute="centerY" secondItem="RgQ-ir-z2b" secondAttribute="centerY" id="gC6-fc-sdw"/>
+                                            <constraint firstItem="6hi-IC-kEG" firstAttribute="leading" secondItem="hBy-te-C28" secondAttribute="trailing" constant="7" id="gCh-ue-2G5"/>
+                                            <constraint firstItem="Yn1-Xm-bcd" firstAttribute="centerY" secondItem="nBJ-ci-9Ba" secondAttribute="centerY" id="gSo-Ll-b3x"/>
+                                            <constraint firstItem="65T-bN-Rq4" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="gno-89-AYV"/>
+                                            <constraint firstItem="hBy-te-C28" firstAttribute="top" secondItem="os6-ya-72Z" secondAttribute="bottom" constant="8" id="hJ4-Oh-vr2"/>
+                                            <constraint firstItem="dDY-cE-DIc" firstAttribute="leading" secondItem="17F-dF-RGJ" secondAttribute="trailing" constant="7" id="i6Y-9s-kjv"/>
+                                            <constraint firstItem="ov8-VV-Z5y" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="i7u-0A-sqE"/>
+                                            <constraint firstAttribute="trailing" secondItem="WvI-gB-KmE" secondAttribute="trailing" constant="91.5" id="i8n-sW-8jM"/>
+                                            <constraint firstItem="65T-bN-Rq4" firstAttribute="centerY" secondItem="yuC-mD-j4r" secondAttribute="centerY" id="iO4-OM-L3H"/>
+                                            <constraint firstItem="kUn-gf-PmT" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="134.5" id="il6-j2-g7q"/>
+                                            <constraint firstItem="65T-bN-Rq4" firstAttribute="top" secondItem="qtV-Ld-AnY" secondAttribute="bottom" constant="18" id="jA1-5c-otx"/>
+                                            <constraint firstItem="SaR-yf-OWI" firstAttribute="centerY" secondItem="17F-dF-RGJ" secondAttribute="centerY" id="jSR-DE-F9m"/>
+                                            <constraint firstItem="hBy-te-C28" firstAttribute="leading" secondItem="6oD-wk-epK" secondAttribute="trailing" constant="79" id="lCQ-hI-6Ry"/>
+                                            <constraint firstItem="pmq-uG-SGR" firstAttribute="centerY" secondItem="XhQ-jj-Hnk" secondAttribute="centerY" id="lUM-80-3Ub"/>
+                                            <constraint firstItem="niU-9W-880" firstAttribute="centerY" secondItem="RgQ-ir-z2b" secondAttribute="centerY" id="m18-ap-ErF"/>
+                                            <constraint firstItem="niU-9W-880" firstAttribute="leading" secondItem="RgQ-ir-z2b" secondAttribute="trailing" constant="7" id="nAt-Gw-zw9"/>
+                                            <constraint firstItem="RgQ-ir-z2b" firstAttribute="leading" secondItem="PSa-zj-9gL" secondAttribute="trailing" constant="27" id="o5G-SF-X6t"/>
+                                            <constraint firstItem="WUZ-05-lAA" firstAttribute="top" secondItem="irw-hp-kZj" secondAttribute="bottom" constant="25" id="oBU-xa-WZi"/>
+                                            <constraint firstAttribute="bottom" secondItem="YkO-dm-Neh" secondAttribute="bottom" constant="109" id="oMC-if-tRp"/>
+                                            <constraint firstAttribute="trailing" secondItem="26V-So-dgC" secondAttribute="trailing" constant="173" id="pJ7-1f-A6f"/>
+                                            <constraint firstItem="sjR-OH-9DM" firstAttribute="centerY" secondItem="yuC-mD-j4r" secondAttribute="centerY" id="pJJ-FS-JEo"/>
+                                            <constraint firstItem="Oli-eh-6c3" firstAttribute="centerY" secondItem="NPM-aO-slR" secondAttribute="centerY" id="pOa-2X-d5X"/>
+                                            <constraint firstItem="bpo-Fd-bqR" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="pei-yH-746"/>
+                                            <constraint firstItem="aWk-Eb-TlX" firstAttribute="centerY" secondItem="os6-ya-72Z" secondAttribute="centerY" id="poO-Ba-pvx"/>
+                                            <constraint firstItem="26V-So-dgC" firstAttribute="top" secondItem="Ig5-Fu-vn8" secondAttribute="bottom" constant="12" id="r5y-wf-6Zg"/>
+                                            <constraint firstItem="sjR-OH-9DM" firstAttribute="leading" secondItem="yuC-mD-j4r" secondAttribute="trailing" constant="7" id="rRl-Jd-k2W"/>
+                                            <constraint firstItem="NPM-aO-slR" firstAttribute="top" secondItem="RgQ-ir-z2b" secondAttribute="bottom" constant="8" id="rg3-W5-Iho"/>
+                                            <constraint firstItem="dDY-cE-DIc" firstAttribute="centerY" secondItem="17F-dF-RGJ" secondAttribute="centerY" id="s4E-Pc-WRg"/>
+                                            <constraint firstItem="PDo-bp-Qjh" firstAttribute="top" secondItem="kUn-gf-PmT" secondAttribute="bottom" constant="20" id="sXf-AN-HIJ"/>
+                                            <constraint firstItem="6oD-wk-epK" firstAttribute="top" secondItem="aWk-Eb-TlX" secondAttribute="bottom" constant="18" id="t1L-VT-pao"/>
+                                            <constraint firstItem="ov8-VV-Z5y" firstAttribute="top" secondItem="WUZ-05-lAA" secondAttribute="bottom" constant="49" id="tGm-Ob-TeB"/>
+                                            <constraint firstItem="qtV-Ld-AnY" firstAttribute="top" secondItem="6oD-wk-epK" secondAttribute="bottom" constant="18" id="tpU-8l-uVe"/>
+                                            <constraint firstItem="aWk-Eb-TlX" firstAttribute="top" secondItem="gRD-JR-90u" secondAttribute="bottom" constant="18" id="ttu-BQ-OIz"/>
+                                            <constraint firstItem="WvI-gB-KmE" firstAttribute="leading" secondItem="PDo-bp-Qjh" secondAttribute="trailing" constant="7" id="u1Q-BZ-Ig5"/>
+                                            <constraint firstItem="LmD-VM-SOQ" firstAttribute="top" secondItem="PSa-zj-9gL" secondAttribute="bottom" constant="18" id="w6W-tU-geW"/>
+                                            <constraint firstItem="PSa-zj-9gL" firstAttribute="top" secondItem="65T-bN-Rq4" secondAttribute="bottom" constant="18" id="wkb-Sn-k13"/>
+                                            <constraint firstAttribute="bottom" secondItem="ov8-VV-Z5y" secondAttribute="bottom" constant="24" id="xJi-27-YO9"/>
+                                            <constraint firstAttribute="trailing" secondItem="YkO-dm-Neh" secondAttribute="trailing" constant="94" id="xcW-1X-w0x"/>
+                                            <constraint firstItem="gRD-JR-90u" firstAttribute="leading" secondItem="xkv-qo-QkY" secondAttribute="leading" constant="16" id="yIO-VO-iry"/>
+                                            <constraint firstItem="YkO-dm-Neh" firstAttribute="leading" secondItem="WUZ-05-lAA" secondAttribute="trailing" constant="31" id="yKQ-Bq-qfz"/>
+                                            <constraint firstItem="WvI-gB-KmE" firstAttribute="top" secondItem="xkv-qo-QkY" secondAttribute="top" constant="83" id="zAz-Js-uDx"/>
+                                            <constraint firstItem="RgQ-ir-z2b" firstAttribute="top" secondItem="yuC-mD-j4r" secondAttribute="bottom" constant="8" id="zYq-Mt-Txn"/>
+                                            <constraint firstItem="Oli-eh-6c3" firstAttribute="leading" secondItem="NPM-aO-slR" secondAttribute="trailing" constant="7" id="zd7-Dg-azX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xkv-qo-QkY" firstAttribute="centerX" secondItem="rHI-dv-mcB" secondAttribute="centerX" id="C5F-yd-qx0"/>
+                                    <constraint firstAttribute="bottom" secondItem="xkv-qo-QkY" secondAttribute="bottom" id="KMS-JX-3xS"/>
+                                    <constraint firstItem="xkv-qo-QkY" firstAttribute="top" secondItem="rHI-dv-mcB" secondAttribute="top" id="Rnr-Yr-t3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="xkv-qo-QkY" secondAttribute="trailing" id="SZJ-jI-5kV"/>
+                                    <constraint firstAttribute="height" constant="647" id="Yns-9O-GHQ"/>
+                                    <constraint firstItem="xkv-qo-QkY" firstAttribute="leading" secondItem="rHI-dv-mcB" secondAttribute="leading" id="axc-uU-pBg"/>
+                                    <constraint firstAttribute="width" constant="375" id="jrh-q0-pQD"/>
+                                    <constraint firstItem="xkv-qo-QkY" firstAttribute="centerY" secondItem="rHI-dv-mcB" secondAttribute="centerY" id="pfr-H0-SQY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZN3-VK-sQY" firstAttribute="top" secondItem="rHI-dv-mcB" secondAttribute="bottom" id="6HP-gF-epO"/>
+                            <constraint firstItem="rHI-dv-mcB" firstAttribute="top" secondItem="bHW-1Z-vbk" secondAttribute="bottom" id="9Jn-Jr-mxW"/>
+                            <constraint firstItem="rHI-dv-mcB" firstAttribute="leading" secondItem="nG5-Pv-Obf" secondAttribute="leading" id="Ghh-oF-vgg"/>
+                            <constraint firstItem="rHI-dv-mcB" firstAttribute="centerX" secondItem="nG5-Pv-Obf" secondAttribute="centerX" id="cbX-DH-csm"/>
+                            <constraint firstAttribute="trailing" secondItem="rHI-dv-mcB" secondAttribute="trailing" id="o2t-He-c2y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOne" destination="irQ-4b-gTR" id="SnE-a1-f24"/>
+                        <outlet property="buttonTwo" destination="ov8-VV-Z5y" id="FAc-y0-4yk"/>
+                        <outlet property="containerScrollView" destination="rHI-dv-mcB" id="SkE-7A-Xpa"/>
+                        <outlet property="halfTimeShouldBeSet" destination="hBy-te-C28" id="chW-Hg-dKM"/>
+                        <outlet property="inScrollView" destination="xkv-qo-QkY" id="0Jp-cs-6dY"/>
+                        <outlet property="isShotClockExistShouldBeSet" destination="26V-So-dgC" id="CHM-jc-Zfs"/>
+                        <outlet property="label" destination="WUZ-05-lAA" id="Dum-Ll-YCA"/>
+                        <outlet property="limitForFoulsOutShouldBeSet" destination="nBJ-ci-9Ba" id="wc6-HH-PVK"/>
+                        <outlet property="quartersShouldBeSet" destination="PDo-bp-Qjh" id="Fok-Lg-BjT"/>
+                        <outlet property="secondsBtwQsShouldBeSet" destination="os6-ya-72Z" id="WD9-24-fAr"/>
+                        <outlet property="secondsPerOTShouldBeSet" destination="XhQ-jj-Hnk" id="xGY-8m-Tox"/>
+                        <outlet property="secondsPerQShouldBeSet" destination="17F-dF-RGJ" id="xHc-o2-ghp"/>
+                        <outlet property="stopTypeOfGameClockShouldBeSet" destination="YkO-dm-Neh" id="V1W-Ax-EiW"/>
+                        <outlet property="teamFoulForBonusShouldBeSet" destination="yuC-mD-j4r" id="wgk-Fu-JdX"/>
+                        <outlet property="timeoutsOfFirstHalfShouldBeSet" destination="RgQ-ir-z2b" id="EVZ-eu-jfm"/>
+                        <outlet property="timeoutsOfOTShouldBeSet" destination="Ig5-Fu-vn8" id="roY-eK-7Gj"/>
+                        <outlet property="timeoutsOfSecondHalfShouldBeSet" destination="NPM-aO-slR" id="CRk-wH-i9n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZs-uR-5Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354.39999999999998" y="271.21439280359823"/>
+        </scene>
+    </scenes>
+</document>

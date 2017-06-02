@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0139A5BF1ED9CABD008871B7 /* RAMPaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A5BE1ED9CABD008871B7 /* RAMPaperSwitch.swift */; };
+		0139A5CB1EDC0C55008871B7 /* UITextFieldExtendedMultiPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A5C61EDC0C55008871B7 /* UITextFieldExtendedMultiPopup.swift */; };
+		0139A5CC1EDC0C55008871B7 /* UITextFieldExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A5C71EDC0C55008871B7 /* UITextFieldExtendedView.swift */; };
+		0139A5CD1EDC0C55008871B7 /* UITextFieldExtendedViewFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A5C81EDC0C55008871B7 /* UITextFieldExtendedViewFloat.swift */; };
+		0139A5CE1EDC0C55008871B7 /* UITextFieldExtendedViewGlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A5C91EDC0C55008871B7 /* UITextFieldExtendedViewGlow.swift */; };
+		0139A5CF1EDC0C55008871B7 /* UITextFieldExtendedViewPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139A5CA1EDC0C55008871B7 /* UITextFieldExtendedViewPopup.swift */; };
+		7D17DEEDB99A57708AF05318 /* Pods_BasketballBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFE75BAFBC9EC99DF2CF3D4 /* Pods_BasketballBook.framework */; };
+		C00AB42B1EB211D6000E0D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AB42A1EB211D6000E0D7A /* AppDelegate.swift */; };
+		C00AB42D1EB211D6000E0D7A /* ScoringTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AB42C1EB211D6000E0D7A /* ScoringTableViewController.swift */; };
+		C00AB4301EB211D6000E0D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00AB42E1EB211D6000E0D7A /* Main.storyboard */; };
+		C00AB4321EB211D6000E0D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00AB4311EB211D6000E0D7A /* Assets.xcassets */; };
+		C00AB4351EB211D6000E0D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00AB4331EB211D6000E0D7A /* LaunchScreen.storyboard */; };
+		C00AB43D1EB212B9000E0D7A /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AB43C1EB212B9000E0D7A /* Rules.swift */; };
+		C00AB43F1EB2160C000E0D7A /* PlayerTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AB43E1EB2160C000E0D7A /* PlayerTeam.swift */; };
+		C00AB4451EB2FF16000E0D7A /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00AB4441EB2FF16000E0D7A /* RulesViewController.swift */; };
+		C0A45C0C1EC48496001C8F81 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A45C0B1EC48496001C8F81 /* ClockView.swift */; };
+		C0A45C0E1EC49696001C8F81 /* GameClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A45C0D1EC49696001C8F81 /* GameClockView.swift */; };
+		C0A45C101EC956D9001C8F81 /* ShotClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A45C0F1EC956D9001C8F81 /* ShotClockView.swift */; };
+		C0A45C121EC9B2A0001C8F81 /* RestClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A45C111EC9B2A0001C8F81 /* RestClockView.swift */; };
+		C0E2D3A21EB76066001A4568 /* BoxScoreSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2D3A11EB76066001A4568 /* BoxScoreSingleton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0139A5BE1ED9CABD008871B7 /* RAMPaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMPaperSwitch.swift; sourceTree = "<group>"; };
+		0139A5C61EDC0C55008871B7 /* UITextFieldExtendedMultiPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtendedMultiPopup.swift; sourceTree = "<group>"; };
+		0139A5C71EDC0C55008871B7 /* UITextFieldExtendedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtendedView.swift; sourceTree = "<group>"; };
+		0139A5C81EDC0C55008871B7 /* UITextFieldExtendedViewFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtendedViewFloat.swift; sourceTree = "<group>"; };
+		0139A5C91EDC0C55008871B7 /* UITextFieldExtendedViewGlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtendedViewGlow.swift; sourceTree = "<group>"; };
+		0139A5CA1EDC0C55008871B7 /* UITextFieldExtendedViewPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtendedViewPopup.swift; sourceTree = "<group>"; };
+		5DC56C42750186D3D739B7DF /* Pods-BasketballBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasketballBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasketballBook/Pods-BasketballBook.debug.xcconfig"; sourceTree = "<group>"; };
+		C00AB4271EB211D6000E0D7A /* BasketballBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00AB42A1EB211D6000E0D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C00AB42C1EB211D6000E0D7A /* ScoringTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringTableViewController.swift; sourceTree = "<group>"; };
+		C00AB42F1EB211D6000E0D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C00AB4311EB211D6000E0D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C00AB4341EB211D6000E0D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C00AB4361EB211D6000E0D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00AB43C1EB212B9000E0D7A /* Rules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		C00AB43E1EB2160C000E0D7A /* PlayerTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTeam.swift; sourceTree = "<group>"; };
+		C00AB4441EB2FF16000E0D7A /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		C0A45C0B1EC48496001C8F81 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		C0A45C0D1EC49696001C8F81 /* GameClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameClockView.swift; sourceTree = "<group>"; };
+		C0A45C0F1EC956D9001C8F81 /* ShotClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotClockView.swift; sourceTree = "<group>"; };
+		C0A45C111EC9B2A0001C8F81 /* RestClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClockView.swift; sourceTree = "<group>"; };
+		C0E2D3A11EB76066001A4568 /* BoxScoreSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxScoreSingleton.swift; sourceTree = "<group>"; };
+		CBFE75BAFBC9EC99DF2CF3D4 /* Pods_BasketballBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasketballBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBA7B05141BD3A12951D365 /* Pods-BasketballBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasketballBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasketballBook/Pods-BasketballBook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00AB4241EB211D6000E0D7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D17DEEDB99A57708AF05318 /* Pods_BasketballBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B5266CB923415A86C3FF23B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DC56C42750186D3D739B7DF /* Pods-BasketballBook.debug.xcconfig */,
+				FDBA7B05141BD3A12951D365 /* Pods-BasketballBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1518C0C88F1BF55F7BC7BE95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBFE75BAFBC9EC99DF2CF3D4 /* Pods_BasketballBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00AB41E1EB211D6000E0D7A = {
+			isa = PBXGroup;
+			children = (
+				C00AB4291EB211D6000E0D7A /* BasketballBook */,
+				C00AB4281EB211D6000E0D7A /* Products */,
+				0B5266CB923415A86C3FF23B /* Pods */,
+				1518C0C88F1BF55F7BC7BE95 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C00AB4281EB211D6000E0D7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C00AB4271EB211D6000E0D7A /* BasketballBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00AB4291EB211D6000E0D7A /* BasketballBook */ = {
+			isa = PBXGroup;
+			children = (
+				0139A5BE1ED9CABD008871B7 /* RAMPaperSwitch.swift */,
+				0139A5C61EDC0C55008871B7 /* UITextFieldExtendedMultiPopup.swift */,
+				0139A5C71EDC0C55008871B7 /* UITextFieldExtendedView.swift */,
+				0139A5C81EDC0C55008871B7 /* UITextFieldExtendedViewFloat.swift */,
+				0139A5C91EDC0C55008871B7 /* UITextFieldExtendedViewGlow.swift */,
+				0139A5CA1EDC0C55008871B7 /* UITextFieldExtendedViewPopup.swift */,
+				C00AB42A1EB211D6000E0D7A /* AppDelegate.swift */,
+				C00AB43C1EB212B9000E0D7A /* Rules.swift */,
+				C00AB43E1EB2160C000E0D7A /* PlayerTeam.swift */,
+				C0E2D3A11EB76066001A4568 /* BoxScoreSingleton.swift */,
+				C0CE3DA21EC2DA5000655542 /* Countdowner */,
+				C0CE3DA41EC2DA9800655542 /* VCs */,
+				C00AB42E1EB211D6000E0D7A /* Main.storyboard */,
+				C00AB4311EB211D6000E0D7A /* Assets.xcassets */,
+				C00AB4331EB211D6000E0D7A /* LaunchScreen.storyboard */,
+				C00AB4361EB211D6000E0D7A /* Info.plist */,
+			);
+			path = BasketballBook;
+			sourceTree = "<group>";
+		};
+		C0CE3DA21EC2DA5000655542 /* Countdowner */ = {
+			isa = PBXGroup;
+			children = (
+				C0A45C0B1EC48496001C8F81 /* ClockView.swift */,
+				C0A45C0F1EC956D9001C8F81 /* ShotClockView.swift */,
+				C0A45C111EC9B2A0001C8F81 /* RestClockView.swift */,
+				C0A45C0D1EC49696001C8F81 /* GameClockView.swift */,
+			);
+			name = Countdowner;
+			sourceTree = "<group>";
+		};
+		C0CE3DA41EC2DA9800655542 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				C00AB42C1EB211D6000E0D7A /* ScoringTableViewController.swift */,
+				C00AB4441EB2FF16000E0D7A /* RulesViewController.swift */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C00AB4261EB211D6000E0D7A /* BasketballBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00AB4391EB211D6000E0D7A /* Build configuration list for PBXNativeTarget "BasketballBook" */;
+			buildPhases = (
+				69F037708C1A76F5CAC95329 /* [CP] Check Pods Manifest.lock */,
+				C00AB4231EB211D6000E0D7A /* Sources */,
+				C00AB4241EB211D6000E0D7A /* Frameworks */,
+				C00AB4251EB211D6000E0D7A /* Resources */,
+				6C518F4E36F6668FA55FDBC6 /* [CP] Embed Pods Frameworks */,
+				33F71B731E616FB2EBB47EB8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasketballBook;
+			productName = BasketballBook;
+			productReference = C00AB4271EB211D6000E0D7A /* BasketballBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C00AB41F1EB211D6000E0D7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = BB;
+				TargetAttributes = {
+					C00AB4261EB211D6000E0D7A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 235M5667H2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C00AB4221EB211D6000E0D7A /* Build configuration list for PBXProject "BasketballBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C00AB41E1EB211D6000E0D7A;
+			productRefGroup = C00AB4281EB211D6000E0D7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C00AB4261EB211D6000E0D7A /* BasketballBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C00AB4251EB211D6000E0D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00AB4351EB211D6000E0D7A /* LaunchScreen.storyboard in Resources */,
+				C00AB4321EB211D6000E0D7A /* Assets.xcassets in Resources */,
+				C00AB4301EB211D6000E0D7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33F71B731E616FB2EBB47EB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BasketballBook/Pods-BasketballBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69F037708C1A76F5CAC95329 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C518F4E36F6668FA55FDBC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BasketballBook/Pods-BasketballBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C00AB4231EB211D6000E0D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00AB4451EB2FF16000E0D7A /* RulesViewController.swift in Sources */,
+				0139A5CB1EDC0C55008871B7 /* UITextFieldExtendedMultiPopup.swift in Sources */,
+				C0A45C101EC956D9001C8F81 /* ShotClockView.swift in Sources */,
+				C0A45C121EC9B2A0001C8F81 /* RestClockView.swift in Sources */,
+				0139A5CF1EDC0C55008871B7 /* UITextFieldExtendedViewPopup.swift in Sources */,
+				0139A5CD1EDC0C55008871B7 /* UITextFieldExtendedViewFloat.swift in Sources */,
+				0139A5CE1EDC0C55008871B7 /* UITextFieldExtendedViewGlow.swift in Sources */,
+				0139A5CC1EDC0C55008871B7 /* UITextFieldExtendedView.swift in Sources */,
+				C0E2D3A21EB76066001A4568 /* BoxScoreSingleton.swift in Sources */,
+				C0A45C0C1EC48496001C8F81 /* ClockView.swift in Sources */,
+				C00AB43F1EB2160C000E0D7A /* PlayerTeam.swift in Sources */,
+				C00AB42D1EB211D6000E0D7A /* ScoringTableViewController.swift in Sources */,
+				C0A45C0E1EC49696001C8F81 /* GameClockView.swift in Sources */,
+				C00AB42B1EB211D6000E0D7A /* AppDelegate.swift in Sources */,
+				C00AB43D1EB212B9000E0D7A /* Rules.swift in Sources */,
+				0139A5BF1ED9CABD008871B7 /* RAMPaperSwitch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C00AB42E1EB211D6000E0D7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C00AB42F1EB211D6000E0D7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C00AB4331EB211D6000E0D7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C00AB4341EB211D6000E0D7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C00AB4371EB211D6000E0D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C00AB4381EB211D6000E0D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C00AB43A1EB211D6000E0D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC56C42750186D3D739B7DF /* Pods-BasketballBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 235M5667H2;
+				INFOPLIST_FILE = BasketballBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bo.BasketballBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C00AB43B1EB211D6000E0D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDBA7B05141BD3A12951D365 /* Pods-BasketballBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 235M5667H2;
+				INFOPLIST_FILE = BasketballBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bo.BasketballBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C00AB4221EB211D6000E0D7A /* Build configuration list for PBXProject "BasketballBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00AB4371EB211D6000E0D7A /* Debug */,
+				C00AB4381EB211D6000E0D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00AB4391EB211D6000E0D7A /* Build configuration list for PBXNativeTarget "BasketballBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00AB43A1EB211D6000E0D7A /* Debug */,
+				C00AB43B1EB211D6000E0D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C00AB41F1EB211D6000E0D7A /* Project object */;
+}

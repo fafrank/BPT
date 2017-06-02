@@ -1,0 +1,15 @@
+PODS:
+  - PureLayout (3.0.2)
+  - SwiftyButton (0.6.0)
+
+DEPENDENCIES:
+  - PureLayout
+  - SwiftyButton
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SwiftyButton: 4c9b61c499f172971a1b8c2eebbbdc20a26d8a08
+
+PODFILE CHECKSUM: 9f3b17eace146397f7ca88332e755e91be7cfcd6
+
+COCOAPODS: 1.1.1

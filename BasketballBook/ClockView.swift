@@ -30,12 +30,31 @@ class ClockView: UIView {
     let addClockTimeBtn = UIButton.init(type: UIButtonType.system)
     let subtractClockTimeBtn = UIButton.init(type: .system)
     
+    func GameClockConstraint() {
+        //lastedTimeLbl
+        self.lastedTimeLbl.autoPinEdge(toSuperviewEdge: .top, withInset: 0)
+        self.lastedTimeLbl.autoPinEdge(toSuperviewEdge: .left, withInset: 0)
+        self.lastedTimeLbl.autoSetDimensions(to: CGSize(width: self.frame.width, height: self.frame.height/3))
+        //開始按鈕
+        self.startPauseResumeClockBtn.autoPinEdge(toSuperviewEdge: .top, withInset: 0)
+        self.startPauseResumeClockBtn.autoPinEdge(toSuperviewEdge: .left, withInset: 0)
+        self.startPauseResumeClockBtn.autoSetDimensions(to: CGSize(width: self.frame.width, height: self.frame.height/3))
+        //加
+        self.addClockTimeBtn.autoPinEdge(toSuperviewEdge: .top, withInset: (self.frame.width)-(lastedTimeLbl.frame.height))
+        self.addClockTimeBtn.autoPinEdge(toSuperviewEdge: .left, withInset: self.frame.width/3)
+        self.addClockTimeBtn.autoSetDimensions(to: CGSize(width: 35, height: 35))
+        //減
+        self.subtractClockTimeBtn.autoAlignAxis(.horizontal, toSameAxisOf: self.addClockTimeBtn)
+        self.addClockTimeBtn.autoPinEdge(toSuperviewEdge: .right, withInset: self.frame.width/3)
+        self.subtractClockTimeBtn.autoSetDimensions(to: CGSize(width: 35, height: 35))
+    }
     
     // frame 在 VC 中宣告
     init(frame: CGRect, countdownFromShouldBeLoad: TimeInterval) {
         countdownFrom = countdownFromShouldBeLoad
         super.init(frame: frame)
         // ***** 現在還是 hard code
+        
         lastedTimeLbl = UILabel.init(frame: CGRect.init(x: 37.5, y: 0, width: 300, height: 100))
         lastedTimeLbl.backgroundColor = UIColor.clear
         lastedTimeLbl.text = timeString(time: countdownFrom)
@@ -57,6 +76,15 @@ class ClockView: UIView {
 //        addClockTimeBtn.backgroundColor = UIColor.red
         addClockTimeBtn.titleLabel?.textAlignment = .center
         
+        addConstraint(NSLayoutConstraint(
+            item: self.addClockTimeBtn,
+            attribute: NSLayoutAttribute.top,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: self.subtractClockTimeBtn,
+            attribute: NSLayoutAttribute.top,
+            multiplier: 1,
+            constant: 0))
+
         subtractClockTimeBtn.frame = CGRect.init(x: 0, y: 0, width: 37.5, height: 100)
         subtractClockTimeBtn.addTarget(self, action: #selector(subtractClockTimeBtnPressed(_:)), for: .touchUpInside)
         subtractClockTimeBtn.setTitle("-", for: .normal)

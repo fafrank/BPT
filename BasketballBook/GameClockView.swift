@@ -27,19 +27,16 @@ class GameClockView: ClockView {
     
     let boxScoreSingleton = BoxScoreSingleton.standard
     
-    func layout1() {
-        periodLbl = UILabel.newAutoLayout()
-        homeScoreLbl = UILabel.newAutoLayout()
-        homeAccumulatedFoulsThisQtrLbl = UILabel.newAutoLayout()
-        guestScoreLbl = UILabel.newAutoLayout()
-        guestAccumulatedFoulsThisQtrLbl = UILabel.newAutoLayout()
-        timeoutRequestFromHomeBtn = FlatButton.newAutoLayout()
-        timeoutRequestFromGuestBtn = FlatButton.newAutoLayout()
-    }
-    
-    func layout2() {
-        homeAccumulatedFoulsThisQtrLbl.autoPinEdge(.leading, to: .trailing, of: self.homeScoreLbl, withOffset: 0)
-    }
+//    func layout1() {
+//        periodLbl = UILabel.newAutoLayout()
+//        homeScoreLbl = UILabel.newAutoLayout()
+//        homeAccumulatedFoulsThisQtrLbl = UILabel.newAutoLayout()
+//        guestScoreLbl = UILabel.newAutoLayout()
+//        guestAccumulatedFoulsThisQtrLbl = UILabel.newAutoLayout()
+//        timeoutRequestFromHomeBtn = FlatButton.newAutoLayout()
+//        timeoutRequestFromGuestBtn = FlatButton.newAutoLayout()
+//        shotClock = ClockView.newAutoLayout() as? ShotClockView
+//    }
     
     override init(frame: CGRect, countdownFromShouldBeLoad: TimeInterval) {
         
@@ -48,16 +45,18 @@ class GameClockView: ClockView {
         // 若沒有開啟 24 秒進攻限制則 shotClock 不給按
         if boxScoreSingleton.rules.isShotClockExist {
             // GC 有開啟switch
-            subtractClockTimeBtn.frame = CGRect.init(x: (lastedTimeLbl.frame.width/3)-10, y: self.frame.height/3, width: 40, height: 40)
-            subtractClockTimeBtn.backgroundColor = UIColor.red
-            lastedTimeLbl.frame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height/3)
-            startPauseResumeClockBtn.frame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height/3)
-            addClockTimeBtn.frame = CGRect.init(x: lastedTimeLbl.frame.width/1.5, y: self.frame.height/3, width: 40, height: 40)
+//            subtractClockTimeBtn.frame = CGRect.init(x: (lastedTimeLbl.frame.width/3)-10, y: self.frame.height/3, width: 40, height: 40)
+//            subtractClockTimeBtn.backgroundColor = UIColor.red
+//            lastedTimeLbl.frame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height/3)
+//            startPauseResumeClockBtn.frame = CGRect.init(x: 0, y: 0, width: self.frame.width, height: self.frame.height/3)
+//            addClockTimeBtn.frame = CGRect.init(x: lastedTimeLbl.frame.width/1.5, y: self.frame.height/3, width: 40, height: 40)
+            self.GameClockConstraint()
             addClockTimeBtn.backgroundColor = UIColor.red
             
             // SC
             let shotClockFrame = CGRect.init(x: 0, y: (self.frame.height - lastedTimeLbl.frame.height)/2, width: self.frame.width, height: (self.frame.height - lastedTimeLbl.frame.height)/2)
             shotClock = ShotClockView.init(frame: shotClockFrame, countdownFromShouldBeLoad: 24)
+            shotClock!.shotClockConstraint()
             shotClock!.sendSubview(toBack:addClockTimeBtn)
             shotClock!.sendSubview(toBack:subtractClockTimeBtn)
             self.insertSubview(shotClock!, at: 0)

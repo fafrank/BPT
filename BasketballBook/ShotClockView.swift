@@ -19,22 +19,19 @@ class ShotClockView: ClockView {
     
     override init(frame: CGRect, countdownFromShouldBeLoad: TimeInterval) {
         super.init(frame: frame, countdownFromShouldBeLoad: countdownFromShouldBeLoad)
-        startFrom24Btn.frame = CGRect.init(x: (self.frame.width/1.5)+57, y: (self.frame.height/3)+20, width: 40, height: 40)
+        startFrom24Btn.frame = CGRect.init(x: (self.frame.width/1.5)+57, y: (self.frame.height/3)+50, width: 40, height: 40)
         startFrom24Btn.backgroundColor = UIColor.red
         subtractClockTimeBtn.frame = CGRect.init(x: (self.frame.width/4)-10, y: (self.frame.height/3)+20, width: 40, height: 40)
         subtractClockTimeBtn.backgroundColor = UIColor.red
         lastedTimeLbl.frame = CGRect.init(x: (self.frame.width/4)-1,y: self.frame.height/3, width: self.frame.width/2, height: self.frame.height/1.5)
         lastedTimeLbl.font = UIFont.systemFont(ofSize: 60)
         lastedTimeLbl.adjustsFontSizeToFitWidth = true
-//        lastedTimeLbl.adjustsFontForContentSizeCategory = true
-//        lastedTimeLbl.backgroundColor = UIColor.red
+
         startPauseResumeClockBtn.frame = CGRect.init(x: self.frame.width/4, y: self.frame.height/3, width: self.frame.width/2, height: self.frame.height/1.5)
         addClockTimeBtn.frame = CGRect.init(x: self.frame.width/1.5, y: (self.frame.height/3)+20, width: 40, height: 40)
         addClockTimeBtn.backgroundColor = UIColor.red
         startFrom14Btn.frame = CGRect.init(x: self.frame.width/11, y: (self.frame.height/3)+20, width: 40, height: 40)
         startFrom14Btn.backgroundColor = UIColor.red
-        
-        
         
         startFrom24Btn.addTarget(self, action: #selector(resetTheClock), for: .touchUpInside)
         startFrom24Btn.setTitle("24", for: .normal)
@@ -47,20 +44,45 @@ class ShotClockView: ClockView {
         invalidShotClockLbl = UILabel.init(frame: lastedTimeLbl.frame)
         invalidShotClockLbl.text = "24"
         invalidShotClockLbl.textAlignment = .center
-        
-        
-        
+    
         self.addSubview(startFrom24Btn)
         self.addSubview(startFrom14Btn)
         startFrom24Btn.isEnabled = false
         startFrom14Btn.isEnabled = false
         
-        
         // 將 invalidShotClockLbl 暫時隱藏, 等需要的時候從 GC 呼叫
         self.insertSubview(invalidShotClockLbl, aboveSubview: startPauseResumeClockBtn)
         invalidShotClockLbl.isHidden = true
-        
 
+    }
+    
+    //shotClock Constraint Method
+    func shotClockConstraint() {
+        //24
+        self.startFrom24Btn.autoPinEdge(toSuperviewEdge: .top, withInset: (self.frame.height/3)+20)
+        self.startFrom24Btn.autoPinEdge(toSuperviewEdge: .left, withInset: (self.frame.width/1.5)+60)
+        self.startFrom24Btn.autoSetDimensions(to: CGSize(width: 35, height: 35))
+        //加
+        self.addClockTimeBtn.autoPinEdge(toSuperviewEdge: .top, withInset: (self.frame.height/3)+20)
+        self.addClockTimeBtn.autoPinEdge(toSuperviewEdge: .left, withInset: (self.frame.width/1.5)+10)
+        self.addClockTimeBtn.autoSetDimensions(to: CGSize(width: 35, height: 35))
+        //小表Label
+        self.lastedTimeLbl.autoPinEdge(toSuperviewEdge: .top, withInset: 35)
+        self.lastedTimeLbl.autoPinEdge(toSuperviewEdge: .right, withInset: self.frame.width/3)
+        //self.lastedTimeLbl.autoCenterInSuperview() 置畫面中心
+        self.lastedTimeLbl.autoSetDimensions(to: CGSize(width: self.frame.width/3, height: self.frame.height/1.5))
+        //開始按鈕
+        self.startPauseResumeClockBtn.autoPinEdge(toSuperviewEdge: .top, withInset: 35)
+        self.startPauseResumeClockBtn.autoPinEdge(toSuperviewEdge: .right, withInset: self.frame.width/3)
+        self.startPauseResumeClockBtn.autoSetDimensions(to: CGSize(width: self.frame.width/3, height: self.frame.height/1.5))
+        //減
+        self.subtractClockTimeBtn.autoPinEdge(toSuperviewEdge: .top, withInset: (self.frame.height/3)+20)
+        self.subtractClockTimeBtn.autoPinEdge(toSuperviewEdge: .right, withInset: (self.frame.width/1.5)+60)
+        self.subtractClockTimeBtn.autoSetDimensions(to: CGSize(width: 35, height: 35))
+        //14
+        self.startFrom14Btn.autoPinEdge(toSuperviewEdge: .top, withInset: (self.frame.height/3)+20)
+        self.startFrom14Btn.autoPinEdge(toSuperviewEdge: .right, withInset: (self.frame.width/1.5)+10)
+        self.startFrom14Btn.autoSetDimensions(to: CGSize(width: 35, height: 35))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -87,7 +109,6 @@ class ShotClockView: ClockView {
             isResumeTapped = true
         }
     }
-    
     
     func startFrom14BtnPressed() {
         lastedTime = 14.1// updateTimer() 跑完大概還要多 0.1 秒
